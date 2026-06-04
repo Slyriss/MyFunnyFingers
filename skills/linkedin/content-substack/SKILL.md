@@ -70,6 +70,85 @@ Do not ask more than 4 questions total. Ask only what is genuinely missing. If S
 
 ---
 
+## Sub-Skill: Research
+
+### When to trigger
+
+Run this sub-skill automatically before writing. Do not ask Sean whether to research — assess the essay type and topic, then decide.
+
+**Always research:**
+- Argument essays — the claim needs grounding beyond personal experience
+- Field Reports where the personal experience reflects a documented trend (e.g., Shenzhen tech growth, SEA startup funding, Singapore SME IT adoption)
+
+**Research if useful:**
+- Reflective essays where one grounding fact would deepen the insight without making it clinical (e.g., the chicken rice essay could carry a single line about Singapore's hawker culture receiving UNESCO recognition — it deepens the point about invisible standards without becoming a food industry report)
+- Portrait essays where the subject's context involves a verifiable claim
+
+**Do not research:**
+- Pure personal narrative where the evidence is lived experience and data would feel imported
+- When Sean's presence in the room is the authority — insider essays do not need external validation
+- When adding a stat would interrupt the rhythm of a paragraph that is already working
+
+---
+
+### What to look up by topic area
+
+**Singapore / culture:**
+- Hawker culture: UNESCO intangible cultural heritage (designated 2023), number of licensed hawker stalls, average price stability over decades
+- Economy: GDP per capita, SME share of GDP, ranking in global competitiveness indices
+- Education / talent pipeline: NUS rankings, NOC program scale and outcomes
+
+**China / Shenzhen:**
+- Shenzhen GDP growth rate, patent filings per capita, manufacturing-to-tech transition timeline
+- Pearl River Delta tech cluster scale vs Silicon Valley comparisons
+- Speed of infrastructure build (e.g., how fast Shenzhen went from fishing village to tech hub)
+
+**SEA tech ecosystem:**
+- Startup funding by year (Indonesia, Singapore, Vietnam dominant), unicorn count
+- Digital economy size (Google/Temasek/Bain e-Conomy SEA report is the canonical source)
+- SME digitization rates across SEA
+
+**Enterprise / AI:**
+- AI adoption rates in SMEs vs large enterprise
+- GenAI enterprise deployment figures (Gartner, McKinsey Global Institute)
+- SAP market share in ERP, customer count
+
+**Physical performance (if relevant):**
+- Hyrox participation growth, race counts, category standards
+- Sub-25 min 5K context (top 10-15% of recreational runners globally)
+
+---
+
+### How to use data inside the essay
+
+**One stat, one sentence, woven in.** Never announce a stat. Never write "According to X" unless the source itself is the point.
+
+Do this:
+> Singapore has over 6,000 licensed hawker stalls. Most of them are run by people who spent years learning one dish.
+
+Not this:
+> According to the Singapore Food Agency, there are approximately 6,000+ hawker stalls across Singapore's 119 hawker centres and food courts.
+
+**The stat should surprise or reframe — not just decorate.** If removing the stat doesn't weaken the sentence, cut it.
+
+**Two stats per essay is the limit.** Three is almost always one too many. If you have three candidates, keep the two most surprising.
+
+**Round numbers are fine.** "More than 6,000" is better than "6,247." Precision signals a report. Rounding signals a writer who has done their homework and trusts the reader.
+
+**Never fabricate.** If the exact figure is uncertain, write around it: "tens of thousands" or "the numbers have barely moved in thirty years." A hedged true statement is better than a confident false one.
+
+---
+
+### Research → intake integration
+
+If research surfaces a figure that would sharpen one of the intake questions, flag it before asking. Example:
+
+> Before I ask about your central argument — Singapore's hawker culture received UNESCO intangible cultural heritage status in 2023. That might be worth weaving in if the essay goes toward the standards angle. Keep that in mind when you answer.
+
+Do not pad the intake with research findings. Surface one fact if it's genuinely useful. Otherwise, research quietly and use it in the draft.
+
+---
+
 ## Essay Types
 
 ### Field Report
@@ -111,11 +190,13 @@ Slower burn. Explores a tension or gap between expectation and reality. Builds t
 
 After intake questions are answered:
 
-1. Write the essay in full. Do not stop to ask for approval mid-draft.
-2. Apply the relevant technique from the top 5 Substacks based on the essay type.
-3. Open with a specific scene or a plain claim — never with context-setting or background.
-4. The payload lands in the final third of the essay. Build toward it.
-5. Close on a single strong statement. No questions. No summary. No "and that's why."
+1. Run the Research sub-skill. Identify 0–2 facts that would sharpen the essay. Hold them until the right moment in the draft.
+2. Write the essay in full. Do not stop to ask for approval mid-draft.
+3. Apply the relevant technique from the top 5 Substacks based on the essay type.
+4. Open with a specific scene or a plain claim — never with context-setting or background.
+5. The payload lands in the final third of the essay. Build toward it.
+6. Weave any research findings in as single sentences inside existing paragraphs. Never drop them as standalone lines.
+7. Close on a single strong statement. No questions. No summary. No "and that's why."
 
 ---
 
@@ -129,6 +210,8 @@ Before outputting the draft, verify:
 - [ ] No line that could have been written by someone who wasn't there
 - [ ] Closes on a statement, not a question
 - [ ] Format rules followed (no headers, no bullets, no bold)
+- [ ] Any stats used are verified, woven in as prose, and limited to two maximum
+- [ ] No stat announced with "According to" or floated as a standalone line
 
 If any item fails, fix it before delivering.
 
