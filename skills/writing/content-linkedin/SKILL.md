@@ -43,7 +43,7 @@ Once Sean answers, write the post. Do not ask again.
 
 ## Step 2: Load Voice Profile
 
-Read `/home/claude/skills/voice-profile/SKILL.md` before writing. Every post must pass the voice profile check.
+Read `voice-profile/SKILL.md` before writing. Every post must pass the voice profile check.
 
 ### Structure
 - Line break between every paragraph — always
@@ -51,9 +51,34 @@ Read `/home/claude/skills/voice-profile/SKILL.md` before writing. Every post mus
 - No headers, no subheadings, no bullet lists inside the post
 - Bold only for a standalone title line if the post calls for one
 - Emojis: 0–1 max, only in milestone posts, never as decoration
+- Character target: 900–1,300 characters for Insight and Take posts. Story, Milestone, Portrait may run to 1,900 characters. Below 600 characters reads as incomplete.
 
 ### Hook
-LinkedIn shows ~2 lines before "...see more." The hook must earn the click — but it doesn't have to reveal the payload. It opens a tension or situation that the reader needs to resolve.
+LinkedIn renders exactly 210 characters before "…see more" on mobile. Everything before that cut is the hook. If the hook doesn't earn the scroll, reach collapses regardless of what follows. The hook must create tension or imply a gap — but it does not reveal the payload.
+
+**Hook Formula Reference**
+
+Ten proven formulas mapped to Sean's post types. During intake, identify which formula fits and name it. Suggest 2 alternatives if the fit is ambiguous.
+
+| Formula | Pattern | Drives | Best Post Type |
+|---|---|---|---|
+| Contrarian + Receipts | "Most people think X. Here's what I actually saw." | Saves, debate | Take, Insight |
+| Time-Anchor | Opens on a specific time + place + confession or gap | Saves | Story, Insight |
+| Curiosity-Gap | Withholds the key information until earned | Read-throughs | Story, Portrait |
+| Odd-Precision Number | Specific number in line one — creates instant credibility | Saves | Insight, Take |
+| R.I.P. | An era or belief declared dead | Shares | Insight, Take |
+| Year-Pivot | Identity or worldview shift framed against a before/after | Comments | Milestone, Insight |
+| Anaphora | Repeated structure for rhythm and escalation | Shares | Take, Story |
+| Self-Proving Meta | The post itself demonstrates the claim it makes | Comments | Insight |
+| Paid-vs-Free Reversal | Contrast between expected value and actual value | Saves | Insight |
+| Comment-Gate | Engagement prompt gates the payoff | Comments (capped reach) | Use sparingly |
+
+**What the formulas look like for Sean:**
+- Contrarian: "Every SME I talk to says they need AI. Half of them still can't track a service ticket."
+- Time-Anchor: "Three months in Shenzhen. One thing I had completely wrong."
+- Odd-Precision Number: "12 plates of chicken rice. None of them right."
+- R.I.P.: "The idea that enterprise software is too complex for small businesses is over."
+- Curiosity-Gap: "She ran a team of 40 for eight years. Then she quit. Here's what she told me."
 
 **What works:**
 - A specific moment or fact that implies more: "I wrote my first LinkedIn post 4 years ago from my army bunk."
@@ -85,6 +110,31 @@ The ending is where the real thing lands. It should feel like the post was alway
 - Portrait: 200–320 words
 - Story: 250–380 words
 - Take: 100–170 words
+
+### Algorithm Signals (Write for the Right Reaction)
+
+LinkedIn's algorithm weights engagement in this order:
+
+**Saves (5x) > 10+ word comments (3x) > Shares (2x) > Author replies (fresh signal) > Likes (1x)**
+
+"200 saves ≈ 4x the reach of 1,000 likes."
+
+What this means for writing:
+- Write the close to earn a save — the reader should want to come back to this. A reframe, a conviction, an insight they'll want to reference.
+- Strong Takes earn saves and debate. Pure Stories earn shares. Incomplete opinions earn comments.
+- A post that earns a like but not a save is a post that people agreed with and forgot.
+
+### Timing
+
+Best posting window: **Tuesday, Wednesday, or Thursday — 7:30 to 9:00 AM local time.**
+
+Avoid Friday afternoon, weekends, and Monday mornings.
+
+### Post-Publish
+
+Reply to every comment within 60 minutes of posting. Each author reply refreshes the algorithm signal and doubles distribution. A post with 10 comments the author replied to outperforms a post with 50 unanswered comments.
+
+Reply with substance — at least 10 words. Acknowledge what they said specifically, then add one sentence of your own.
 
 ---
 
@@ -173,18 +223,53 @@ An opinion, a contradiction, a pattern. Should feel slightly uncomfortable to po
 
 ---
 
+## Sub-Skill: Audit + Humanizer
+
+Run this automatically before every output. Do not ask Sean to trigger it.
+
+### Pass 1 — Scrub (AI fingerprints)
+Remove or replace anything on this list:
+- Em dashes (replace with period or new sentence)
+- Banned vocabulary from voice profile: leverage, utilize, harness, foster, streamline, robust, cultivate, garner, underscore, fundamentally, essentially, ultimately, crucially, notably, delve, unlock, game-changer, thought leader
+- "In today's fast-paced world" or any variant
+- Cliché closers: "What do you think?", "Tag someone who needs this", "Drop a comment below"
+- Outline-formula closers: "Despite X... Looking ahead..."
+- All-caps openers
+- Rule-of-three lists without concrete evidence behind each item
+
+### Pass 2 — Break (sentence rhythm)
+Check sentence length variance. If more than 3 consecutive sentences are roughly the same length, break the pattern. Every section needs at least one sentence under 7 words and one over 20 words. Uniform length is an AI tell.
+
+### Pass 3 — Add (specificity markers)
+Verify per 100 words:
+- At least 1 specific number
+- At least 1 named entity (person, company, place, product)
+- At least 1 first-person concrete detail ("I was," "I saw," "I asked")
+
+If any of these are missing, identify where one could be added naturally without inventing facts.
+
+### Hook window check
+Count the first 210 characters. Does the hook create tension or imply a gap before the cut? If the 210-char cut lands mid-sentence with nothing pulling the reader through, rewrite the first two lines.
+
+### Algorithm check
+Does the close earn a save? Would someone want to come back to this line? If not, sharpen it.
+
+---
+
 ## Quality Check
 
 Before outputting, verify:
 
-- [ ] Zero em dashes. Replace with a period or new sentence.
-- [ ] Hook survives the "...see more" cutoff and creates pull
+- [ ] Audit sub-skill ran (all 3 passes complete)
+- [ ] Hook fits within 210 characters and creates pull
+- [ ] Zero em dashes
+- [ ] No banned vocabulary
+- [ ] Sentence length varies — no 3+ consecutive same-length sentences
+- [ ] At least 1 number, 1 named entity, 1 first-person detail per 100 words
 - [ ] No sentence that could have been written by anyone
-- [ ] Specific detail is doing the work, not adjectives
-- [ ] The close lands — it's the thing the whole post was pointing at
+- [ ] The close earns a save — specific, resonant, worth returning to
 - [ ] One payload only — no second insight sneaking in
-- [ ] Reads in Sean's voice, not generic LinkedIn voice
-- [ ] Word count fits the post type
+- [ ] Character count fits the post type
 
 ---
 

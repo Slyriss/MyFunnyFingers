@@ -70,6 +70,7 @@ Every post has one payload. Not two insights, not a lesson and a story. One thin
 - Body: mix of short punchy lines and slightly longer ones carrying context
 - Impact lines: isolated. One sentence. Its own paragraph.
 - Never: long compound sentences that bury the point
+- Burstiness rule: every section needs at least one sentence under 7 words alongside at least one over 20 words. Uniform sentence length is an AI tell. Variance is a human tell.
 
 LinkedIn paragraphs: 1–3 sentences, always a line break after.
 
@@ -85,11 +86,14 @@ LinkedIn paragraphs: 1–3 sentences, always a line break after.
 
 **Avoids:**
 - leverage (verb), ecosystem (overused), game-changer, thought leader
-- "passion for," "excited to share," "humbled"
-- "innovative solutions," "value-add"
+- utilize, harness, foster, streamline, robust, cultivate, garner, underscore
+- "passion for," "excited to share," "humbled," "delve," "unlock"
+- "innovative solutions," "value-add," "in today's fast-paced world"
+- Filler adverbs: fundamentally, essentially, ultimately, crucially, notably
 - Starting with "As a..."
 - Adjective-stacking: "incredible, amazing, outstanding"
 - Em dashes (—) in any form. Use a period or a new sentence instead.
+- Rule-of-three lists without concrete receipts backing each item
 
 ---
 

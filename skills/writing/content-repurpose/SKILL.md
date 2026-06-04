@@ -65,7 +65,7 @@ Also run the research sub-skill from `content-substack/SKILL.md` here — identi
 
 ## Step 3: Write Both Versions
 
-Write the LinkedIn post first. Then write the Substack essay.
+Write the LinkedIn post first, running the Audit + Humanizer sub-skill from `content-linkedin/SKILL.md` before delivering it. Then write the Substack essay.
 
 Present them in this order:
 
