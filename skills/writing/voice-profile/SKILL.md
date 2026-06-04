@@ -31,6 +31,11 @@ He writes as someone who has *been in the room* — not an observer commenting f
 - Excessive exclamation marks or emoji padding
 - Lessons dressed up as stories ("Here's what I learned: 1. 2. 3.")
 - Moralising or telling the reader what to think
+- Throat-clearing openers: "Here's the thing:", "The truth is,", "Let me be clear", "I'll be honest", "The reality is", "It turns out", "The uncomfortable truth is"
+- Binary contrast / negation-then-assertion: "Not X. But Y." or "The problem isn't X. It's Y." State the actual claim directly instead.
+- Dramatic fragmentation for manufactured profundity: isolated one- or two-word sentences used as a rhetorical move. ("Not for food. For everything.") Use a full sentence that earns the weight.
+- False agency: inanimate things performing human actions. ("The culture shifts." "A complaint becomes a fix." "The system decides.") Name the actor.
+- Rhetorical setups that announce the insight before delivering it: "Here's what I mean:", "What this tells us is:", "And that's the point."
 
 ---
 

@@ -229,9 +229,14 @@ Run this automatically before every output. Do not ask Sean to trigger it.
 
 ### Pass 1 — Scrub (AI fingerprints)
 Remove or replace anything on this list:
-- Em dashes (replace with period or new sentence)
+- Em dashes (replace with period or a new sentence — no exceptions)
 - Banned vocabulary from voice profile: leverage, utilize, harness, foster, streamline, robust, cultivate, garner, underscore, fundamentally, essentially, ultimately, crucially, notably, delve, unlock, game-changer, thought leader
 - "In today's fast-paced world" or any variant
+- Throat-clearing openers: "Here's the thing:", "The truth is,", "Let me be clear", "I'll be honest", "The reality is", "It turns out", "The uncomfortable truth is"
+- Binary contrast / negation-then-assertion: "Not X. But Y." or "The problem isn't X. It's Y." Rewrite as a direct positive claim.
+- Dramatic fragmentation: isolated one- or two-word sentences used as a rhetorical move. Fold into a real sentence.
+- False agency: inanimate things performing human actions ("the culture shifts", "a complaint becomes a fix"). Rewrite with a named actor.
+- Rhetorical setups: "Here's what I mean:", "What this tells us is:", "And that's the point:", "What if I told you". Delete the setup, state the point directly.
 - Cliché closers: "What do you think?", "Tag someone who needs this", "Drop a comment below"
 - Outline-formula closers: "Despite X... Looking ahead..."
 - All-caps openers
