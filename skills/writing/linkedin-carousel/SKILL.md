@@ -34,6 +34,22 @@ LinkedIn carousels live or die on two moments: whether slide 1 stops the scroll,
 
 ## Workflow
 
+### 0. Run the discovery interview (always — skip nothing)
+
+Before writing a single word of copy, ask these four questions. Generic carousels die in the feed; the answers to these are what make copy feel like it was written about the reader, not at them.
+
+Ask all four in a single `AskUserQuestion` call (show them as multiple-choice with an "Other" escape hatch for nuance):
+
+1. **Target reader** — Job title and what keeps them up at night. Options: CTO/IT Director (AI readiness, budget); IT Manager/Sysadmin (downtime, vendor gaps); Procurement/Finance (ROI, reliability); Business owner/MD (falling behind competitors).
+
+2. **Core emotion / pain** — The thing clients actually say before they sign. Options: "We don't know where to start"; "Our setup can't handle AI workloads"; "We got burned by a bad deployment before"; "Competitors are moving faster than us."
+
+3. **Proof point** — A real number, sector win, or outcome. Even rough is fine. If they have one, use it verbatim as the hook. If not, fall back to brand proof points from `references/aggasys-brand.md`.
+
+4. **Desired action + emotion** — What the reader does AND feels after the last slide. Options: DM/email (feel confident we're the right partner); comment for lead magnet (feel like they're missing something — drives algorithm); save the post (feel informed — long-term reach); visit website (feel like this is exactly what they need).
+
+**Why this matters:** the answers change everything. The same product list written for a CFO who fears being left behind reads completely differently from the same list written for an IT manager who is frustrated with downtime. Same products. Different emotional truth. Different copy. Do not skip this step even if the brief feels clear — the questions often surface a detail (a real deployment stat, a specific fear phrase) that becomes the hook.
+
 ### 1. Understand the brief
 
 From the user's topic, establish: the audience (who swipes this?), the promise (what do they walk away with?), and the angle (contrarian take, numbered lessons, framework, story, mistakes-to-avoid?). If the user gave only a bare topic, pick the strongest angle yourself and state your choice — don't interrogate them. If they pasted source material (article, notes, post), mine it for the most surprising or specific claims; specificity is what makes hooks work.
