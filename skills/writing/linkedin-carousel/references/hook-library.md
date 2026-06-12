@@ -136,8 +136,34 @@ Before committing to a hook, check every box:
 - [ ] Does not start with "We are proud to…" / "At [Company]…" / "Excited to share…"
 - [ ] Names a real consequence, result, or tension — not a vague benefit
 - [ ] For Aggasys: leads with a verified metric, not the company name
-- [ ] Under 15 words (Aggasys brand spec)
+- [ ] **8 words or fewer on the hook line** — if you're at 9+, cut
 - [ ] Sub-hook (second line) adds intrigue — does NOT restate the hook
+
+---
+
+## Hook conciseness — the word-count discipline
+
+The single most common failure mode is a hook that's structurally correct but one sentence too long. LinkedIn scrollers give you under 2 seconds. Every extra word is a reason to keep scrolling.
+
+**Target:** 5–8 words on the hook line. The sub-hook takes the next line — don't put it all in one sentence.
+
+**Cutting techniques:**
+- Drop "the" and "a" where meaning survives: "The stack most businesses skip" → "Stack most businesses skip"
+- Replace adjective phrases with a number: "production-ready AI infrastructure" → "production AI stack" or "AI infrastructure" + the number does the work
+- Cut "Here's what": "Here's what we learned" → "What we learned:" or just the content
+- Replace "that actually works" / "that changes everything" — these are filler. The specificity is what works.
+
+**Before / after:**
+
+| Too long | Tight |
+|---|---|
+| "Here's the complete AI infrastructure stack explained in plain English." | "AI infra. 6 layers. Plain English." |
+| "Most businesses buy AI hardware wrong. Here's the 6-layer stack that actually works." | "Most businesses buy AI hardware wrong." (let the sub-hook deliver the promise) |
+| "How to build a production-ready AI infrastructure in 6 steps." | "Production AI stack in 6 steps." |
+| "After 1,000+ deployments, here are 6 things we know for sure about AI infrastructure." | "1,000+ deployments. 6 things we learned." |
+| "AI infrastructure has 6 layers. Most businesses only think about one." | "AI has 6 layers. Most firms buy one." |
+
+**The rhythm test:** read the hook aloud. If it takes more than 1.5 seconds, it's too long. Punchy hooks land in under a breath.
 
 ---
 

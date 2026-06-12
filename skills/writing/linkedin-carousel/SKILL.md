@@ -100,7 +100,7 @@ Design rules (these are anti-headache rules, not taste suggestions — cramped, 
 - Give the deck a unique text personality: pair two contrasting fonts (e.g. expressive serif headline + clean sans support), and mark the key phrase on each slide with a highlight, underline, or accent color — viral carousels style individual words, not whole slides.
 - A mid-deck pattern-break slide (full-bleed image or typographic-art slide) resets attention in decks over 9 slides.
 - Generous whitespace; text occupies the middle ~70%, nothing within 80px of edges — and keep the bottom corners empty, LinkedIn renders its nav arrows there over your content.
-- Pick a 2-color palette + one accent that fits the topic. Avoid the AI-slop defaults (purple-to-blue gradients, glassmorphism, emoji bullets on every line).
+- Pick a palette from `references/colour-palettes.md` — it has 6 curated combinations with hex codes, contrast rules, and when to use each. For Aggasys carousels the palette is locked (Navy/Cyan/White) but the file includes Aggasys-specific slide-level colour strategy. Avoid the AI-slop defaults: purple-to-blue gradients, glassmorphism, neon-on-black, emoji bullets on every line.
 - Consistent footer on every slide: page number ("3/11") and the author's name or @handle if known.
 - Where a claim benefits from proof, use an evidence element: a stat called out at the bottom of the slide, or a screenshot-style block.
 - The CTA slide may visually break the pattern (inverted colors) to signal the end.
