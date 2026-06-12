@@ -62,12 +62,16 @@ Every carousel is a three-act structure:
 2. **Body (slides 2 to N-1)** — **dive right in, rehooking as you go**. No agenda or intro slide; slide 2 delivers the first real content *while* deepening the curiosity (raise the stakes, sharpen the promise). Use numbered headings ("#1…" or "STEP ONE…") so progress feels legible and completable. One idea per slide, each slide earns the next swipe.
 3. **Close (last 1-2 slides)** — a recap slide (summarize the steps — this drives saves), then a CTA slide. Pick the CTA from the viral menu: comment-a-keyword lead magnet (highest engagement), newsletter plug with a screenshot of it, follow + profile pic, or a reflective question. A carousel that ends abruptly wastes the attention it earned.
 
-Hook formulas that recur in viral carousels (pick one, make it specific):
-- Number + outcome: "6 copywriting lessons that made me 6 figures"
-- Contrarian declaration: "Company pages are dead"
-- Anti-pattern: "My anti-to-do list"
-- Big promise: "Steal my exact [system/template/process]"
-- Curiosity gap: "I analyzed 11 viral carousels. Here's what they all do."
+**Hook selection — always use `references/hook-library.md`.** Read it before writing a single word of the cover slide. It contains 7 categories of proven formulas (curiosity, contrarian, problem/pain, list/value, story, authority/proof, trend) plus The LinkedIn Creator's 5 fill-in templates, a sub-hook pattern guide, and a hook strength checklist. Pick the category that matches the core emotion from the discovery interview — then fill every bracket with something specific. A hook with a real number always beats one without. A hook that names a real consequence always beats one that stays vague.
+
+Hook category → discovery interview answer mapping:
+- "We don't know where to start" → **Curiosity** (C-1, C-3) or **Problem** (P-5)
+- "Our setup can't handle AI workloads" → **Problem** (P-1, P-4) or **Contrarian** (CT-3)
+- "We got burned before" → **Story** (S-1) or **Authority** (A-2)
+- "Competitors are moving faster" → **Trend** (T-2) or **Contrarian** (CT-5)
+- Aggasys or verified-metric brief → **Authority** (A-3, A-4) — always
+
+Before finalising the hook, run it through the hook strength checklist in the library. If it fails any box, rewrite it.
 
 ### 3. Write the slide copy
 
