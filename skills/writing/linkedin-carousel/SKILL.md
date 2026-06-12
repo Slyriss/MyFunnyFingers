@@ -77,6 +77,16 @@ Before finalising the hook, run it through the hook strength checklist in the li
 
 Write all slides as plain text first and show them to the user inline before designing — copy is the product, design is packaging. Per slide: a short headline (the one idea) and at most 2-3 supporting lines. Enforce the numbers: ~20-30 words per slide, 5-7 words per line. Cut adjectives, keep verbs and numbers. Each slide should be understandable on its own *and* create a reason to swipe (open loops, numbered progress like "3/7", cliffhanger last lines).
 
+**Product walkthrough carousels — mandatory one-liner rule:**
+When the carousel features specific products (hardware, software, tools, services), every product slide must include a single plain-English line that explains *what the product is* — before any benefit or emotional copy. Not a spec sheet. One sentence a non-technical reader could understand.
+
+Structure for each product slide:
+1. **What it is** — one line, plain English (e.g. "A 2U rack server built for high-density AI compute workloads.")
+2. **What it does for you** — the benefit or outcome (e.g. "Handles production AI at scale — certified and deployed by our engineers.")
+3. **Why it matters here** — the emotional or strategic hook (e.g. "This is where your AI actually runs.")
+
+This prevents the carousel from assuming the reader already knows what the product is. An MD reading "PowerEdge R760XD2" with no context will swipe away. An MD reading "A dual-socket rack server that runs your AI workloads 24/7 — deployed and maintained by Dell-certified engineers" will keep reading. The one-liner is the bridge between the product name and the benefit. Never skip it.
+
 ### 4. Design the deck
 
 Copy `assets/template.html` to the working directory as `<topic-slug>-carousel.html` and fill in the slides. The template is a self-contained HTML file where each `.slide` is exactly 1080x1350 with `@page` CSS so it prints to a correct PDF.
