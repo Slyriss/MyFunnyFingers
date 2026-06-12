@@ -7,6 +7,22 @@ description: Generate viral-quality LinkedIn carousel content on any topic — s
 
 Turn any topic into a complete, ready-to-post LinkedIn carousel: the slide copy, a designed deck, a PDF (LinkedIn carousels are uploaded as PDF document posts), and the caption text for the post itself.
 
+## Brand detection
+
+Before writing a single word, check whether this carousel is for a specific brand. If the user mentions **Aggasys**, **Aggasys Solutions**, or the brief is clearly for their LinkedIn, apply the Aggasys brand profile:
+
+- Read `references/aggasys-brand.md` for all palette, typography, voice, and carousel-architecture rules
+- Use `assets/aggasys-template.html` instead of the generic template — it already has the correct Navy cover → White content → Cyan proof → Navy CTA slide architecture
+- Hook must lead with a **verified metric or proof point** — never the company name first
+- **Arial only** — no serif fonts (overrides the "pair two contrasting fonts" rule below)
+- Slide count: **4–8** (Aggasys brand spec, not 8-12)
+- CTA slide must include: `www.aggasys.com` and `presales@aggasys.com`
+- Voice: British English, active voice, no "world-class / cutting-edge / leverage / synergy"
+
+For all other brands or personal carousels, continue with the generic workflow below.
+
+---
+
 ## Why these rules exist
 
 LinkedIn carousels live or die on two moments: whether slide 1 stops the scroll, and whether each subsequent slide is digestible in 2-3 seconds of swiping. Analysis of viral carousels (800+ likes each) found remarkably consistent numbers — read `references/viral-patterns.md` before writing your first carousel in a session. The headline findings:

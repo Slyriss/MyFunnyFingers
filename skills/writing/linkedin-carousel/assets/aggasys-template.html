@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Aggasys LinkedIn Carousel</title>
+<style>
+  /* ============================================================
+     AGGASYS SOLUTIONS — LinkedIn carousel template
+     1080x1350 portrait slides (or 1080x1080 square — adjust @page)
+     Palette: Navy #0D2B55 · Cyan #00AEEF · Charcoal #1A1A2E
+     Font: Arial only (Aggasys brand mandate — no serifs)
+     Architecture: Navy cover → White content slides → Cyan proof → Navy CTA
+     ============================================================ */
+  :root {
+    --navy:    #0D2B55;
+    --cyan:    #00AEEF;
+    --charcoal:#1A1A2E;
+    --white:   #FFFFFF;
+    --midgray: #6B7280;
+    --ltgray:  #F3F4F6;
+    --green:   #16A34A;  /* inclusions ✓ only */
+    --orange:  #F59E0B;  /* warnings ⚠ only */
+    --red:     #DC2626;  /* exclusions ✗ only */
+    --font:    Arial, Helvetica, sans-serif;
+  }
+  @page { size: 1080px 1350px; margin: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #111; }
+
+  /* ── BASE SLIDE ─────────────────────────────────────────── */
+  .slide {
+    width: 1080px; height: 1350px;
+    font-family: var(--font);
+    /* 80px safe zone top/sides per Aggasys spec;
+       extra bottom clears LinkedIn's nav arrow overlay */
+    padding: 90px 90px 180px;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative;
+    page-break-after: always; break-after: page;
+    overflow: hidden;
+  }
+  .slide:last-child { page-break-after: auto; break-after: auto; }
+  @media screen { .slide { margin: 20px auto; } }
+
+  /* ── FRAME 1: COVER (Navy bg) ───────────────────────────── */
+  .slide.cover { background: var(--navy); color: var(--white); justify-content: flex-end; padding-bottom: 220px; }
+  .cover .service-label {
+    font-size: 30px; font-weight: bold; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--cyan); margin-bottom: 28px;
+  }
+  .cover h1 {
+    font-size: 110px; line-height: 1.0; font-weight: bold;
+    color: var(--white); margin-bottom: 28px;
+  }
+  .cover .subhook {
+    font-size: 36px; font-weight: normal; color: var(--cyan);
+    max-width: 860px; line-height: 1.35;
+  }
+  /* Cyan rule at bottom — brand spec */
+  .cover::after {
+    content: ''; position: absolute; bottom: 140px; left: 90px; right: 90px;
+    height: 3px; background: var(--cyan);
+  }
+  /* Logo placeholder bottom-left (Aggasys logo on Frame 1 per brand rules) */
+  .logo-mark {
+    position: absolute; bottom: 155px; left: 90px;
+    font-size: 22px; font-weight: bold; color: var(--white);
+    letter-spacing: 0.05em;
+  }
+  .swipe {
+    position: absolute; bottom: 155px; right: 90px;
+    font-size: 28px; color: var(--cyan); font-weight: bold;
+  }
+
+  /* ── FRAMES 2–(N-2): CONTENT (White bg) ────────────────── */
+  .slide.content { background: var(--white); color: var(--charcoal); }
+  .content .kicker {
+    font-size: 24px; font-weight: bold; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--cyan); margin-bottom: 20px;
+  }
+  /* Cyan rule under section label (brand spec) */
+  .content .rule {
+    width: 64px; height: 3px; background: var(--cyan); margin-bottom: 32px;
+  }
+  .content h2 {
+    font-size: 84px; line-height: 1.05; font-weight: bold;
+    color: var(--navy); margin-bottom: 40px;
+  }
+  .content .body {
+    font-size: 36px; line-height: 1.5; color: var(--charcoal);
+    max-width: 860px;
+  }
+  .content .body strong { color: var(--navy); }
+  /* Cyan underline on key phrase (word-level styling) */
+  .content .body .ul {
+    text-decoration: underline; text-decoration-color: var(--cyan);
+    text-decoration-thickness: 3px; text-underline-offset: 5px;
+  }
+  /* Cyan highlight on key phrase */
+  .content .body .hl { background: var(--cyan); color: var(--white); padding: 0 0.1em; }
+
+  /* Evidence / stat callout on content slides */
+  .stat-block {
+    margin-top: 52px; padding-left: 28px;
+    border-left: 6px solid var(--cyan);
+  }
+  .stat-block .num { font-size: 72px; font-weight: bold; color: var(--navy); line-height: 1; }
+  .stat-block .label { font-size: 26px; color: var(--midgray); margin-top: 6px; }
+
+  /* Warning callout — orange left border, per component library */
+  .warn-box {
+    margin-top: 40px; padding: 28px 28px 28px 36px;
+    background: #FFF7ED; border-left: 6px solid var(--orange);
+    font-size: 28px; line-height: 1.45; color: var(--charcoal);
+  }
+  .warn-box strong { color: var(--orange); }
+
+  /* Info callout — cyan left border */
+  .info-box {
+    margin-top: 40px; padding: 28px 28px 28px 36px;
+    background: #E0F2FE; border-left: 6px solid var(--cyan);
+    font-size: 28px; line-height: 1.45; color: var(--charcoal);
+  }
+
+  /* ── FRAME N-1: PROOF (Cyan bg) ─────────────────────────── */
+  .slide.proof {
+    background: var(--cyan); color: var(--navy);
+    text-align: center; justify-content: center; align-items: center;
+  }
+  .proof .proof-label {
+    font-size: 28px; font-weight: bold; letter-spacing: 0.15em;
+    text-transform: uppercase; color: var(--white); margin-bottom: 32px;
+  }
+  .proof .big-stat { font-size: 160px; font-weight: bold; color: var(--navy); line-height: 1; }
+  .proof .stat-desc { font-size: 40px; font-weight: bold; color: var(--navy); margin-top: 20px; max-width: 700px; }
+  .proof .stat-source { font-size: 26px; color: var(--white); margin-top: 24px; }
+
+  /* ── FRAME N: CTA (Navy bg) ─────────────────────────────── */
+  .slide.cta { background: var(--navy); color: var(--white); justify-content: center; }
+  .cta h2 { font-size: 80px; font-weight: bold; color: var(--white); margin-bottom: 28px; }
+  .cta .cta-line {
+    font-size: 34px; color: var(--cyan); font-weight: bold; margin-bottom: 48px;
+  }
+  .cta .contact { font-size: 30px; color: var(--white); line-height: 1.8; }
+  .cta .contact a, .cta .contact span { color: var(--cyan); }
+  /* Cyan rule at bottom */
+  .cta::after {
+    content: ''; position: absolute; bottom: 140px; left: 90px; right: 90px;
+    height: 3px; background: var(--cyan);
+  }
+  /* Logo bottom-left on CTA slide (brand spec: logo on Frame 1 and Frame N) */
+  .cta .logo-mark {
+    position: absolute; bottom: 155px; left: 90px;
+    font-size: 22px; font-weight: bold; color: var(--white);
+  }
+
+  /* ── SHARED FOOTER (all non-cover, non-proof slides) ─────── */
+  .footer {
+    position: absolute; bottom: 100px; left: 90px; right: 90px;
+    display: flex; justify-content: space-between; align-items: center;
+    font-size: 26px; color: var(--midgray);
+  }
+  .footer .pg { color: var(--midgray); font-size: 26px; }
+  .footer .arr { color: var(--cyan); font-weight: bold; font-size: 30px; }
+</style>
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       FRAME 1 — COVER
+       Navy bg · Hook = metric or bold proof point (never company name first)
+       Aggasys logo bottom-left · Cyan rule at bottom
+       Max 15 words in h1
+       ══════════════════════════════════════════════════════ -->
+  <section class="slide cover">
+    <div class="service-label">Enterprise IT · LinkedIn Series</div>
+    <h1>1,000+ deployments.<br>Zero compromises.</h1>
+    <div class="subhook">How we build infrastructure that enterprises rely on — and what that actually means on the ground.</div>
+    <div class="logo-mark">AGGASYS SOLUTIONS</div>
+    <div class="swipe">swipe →</div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       FRAME 2 — CONTENT (dive right in, rehook while delivering value)
+       White bg · Navy heading · Charcoal body
+       Max 40 words body · Numbered structure where applicable
+       ══════════════════════════════════════════════════════ -->
+  <section class="slide content">
+    <div class="kicker">01 — The Problem</div>
+    <div class="rule"></div>
+    <h2>Most IT projects fail before installation day.</h2>
+    <div class="body">
+      The hardware arrives. The site isn't ready.<br>
+      No power sockets. No network access. No rack space.<br>
+      <span class="ul">Three hours of prep prevents three days of delay.</span>
+    </div>
+    <div class="footer"><span>Aggasys Solutions</span><span class="pg">2/7 <span class="arr">→</span></span></div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       FRAME 3 — CONTENT with stat evidence callout
+       ══════════════════════════════════════════════════════ -->
+  <section class="slide content">
+    <div class="kicker">02 — The Standard</div>
+    <div class="rule"></div>
+    <h2>Dell-certified engineers.<br>Every deployment.</h2>
+    <div class="body">
+      Not account managers. Not subcontractors.<br>
+      The same engineers who spec the solution install it.
+    </div>
+    <div class="stat-block">
+      <div class="num">99.9%</div>
+      <div class="label">uptime achieved across 1,000+ deployments</div>
+    </div>
+    <div class="footer"><span>Aggasys Solutions</span><span class="pg">3/7 <span class="arr">→</span></span></div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       FRAME 4 — CONTENT with warning callout
+       Use for important client responsibilities / conditions
+       ══════════════════════════════════════════════════════ -->
+  <section class="slide content">
+    <div class="kicker">03 — Before We Arrive</div>
+    <div class="rule"></div>
+    <h2>Site readiness is half the deployment.</h2>
+    <div class="body">
+      Confirm rack space, power sockets, and network access before installation day.
+    </div>
+    <div class="warn-box">
+      <strong>⚠ Do not unpack hardware before our engineers arrive.</strong><br>
+      Self-unpacking voids your Dell warranty. We handle it — safely and correctly.
+    </div>
+    <div class="footer"><span>Aggasys Solutions</span><span class="pg">4/7 <span class="arr">→</span></span></div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       FRAME 5 — CONTENT: recap / summary (drives saves)
+       ══════════════════════════════════════════════════════ -->
+  <section class="slide content">
+    <div class="kicker">Recap</div>
+    <div class="rule"></div>
+    <h2>The Aggasys deployment checklist:</h2>
+    <div class="body">
+      1. Site confirmed — power, rack, network ready<br>
+      2. Hardware received — do not unpack<br>
+      3. Our engineers arrive — Dell-certified, on time<br>
+      4. Deployment, firmware, validation — zero downtime<br>
+      <span class="hl">Save this for your next procurement cycle.</span>
+    </div>
+    <div class="footer"><span>Aggasys Solutions</span><span class="pg">5/7 <span class="arr">→</span></span></div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       FRAME N-1 — PROOF
+       Cyan bg · Large centred stat · Verified metric only
+       ══════════════════════════════════════════════════════ -->
+  <section class="slide proof">
+    <div class="proof-label">Case Study · Education Sector</div>
+    <div class="big-stat">360</div>
+    <div class="stat-desc">schools. 400,000+ students.<br>Zero security breaches.</div>
+    <div class="stat-source">Dell infrastructure · Deployed by Aggasys Solutions</div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════
+       FRAME N — CTA
+       Navy bg · "Get in touch" · Direct line claim · Contact details
+       Aggasys logo bottom-left · Cyan rule at bottom
+       ══════════════════════════════════════════════════════ -->
+  <section class="slide cta">
+    <h2>Get in touch.</h2>
+    <div class="cta-line">Talk to a senior engineer directly — no hand-offs.</div>
+    <div class="contact">
+      <span>www.aggasys.com</span><br>
+      <span>presales@aggasys.com</span><br>
+      <span>+65 6250 0045</span>
+    </div>
+    <div class="logo-mark">AGGASYS SOLUTIONS</div>
+  </section>
+
+</body>
+</html>
