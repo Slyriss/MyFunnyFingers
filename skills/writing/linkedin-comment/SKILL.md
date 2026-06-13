@@ -136,30 +136,36 @@ Extract from both phases:
 
 ---
 
-### 2. Draft the comment
+### 2. Always produce 3 variants
 
-**Length by purpose:**
-- **Outbound authority-building:** 60–120 words. Long enough to show expertise, short enough to read in full.
-- **Outbound quick add:** 20–40 words. One sharp observation. One question.
-- **Inbound reply:** 30–80 words. Acknowledge specifically what they said, add one sentence, ask one question.
+Never output a single comment. Always write 3 variants and let the user pick.
 
-**Structure:**
+Each variant takes the same raw input and sharpens it differently:
+- **A — Energy-first:** opens with momentum, closes with forward motion. Best when the user's raw thought is about excitement, pride, or possibility.
+- **B — Understated:** quieter, more weight. Opens on an observation, closes with conviction. Best when the raw thought is about reflection or gratitude.
+- **C — Client/outcome-forward:** anchors on what this means for the people they serve or work with. Best when the raw thought points outward rather than inward.
+
+Label them clearly. After showing all three, ask: "Which one feels right — or is there a line from one you'd combine with another?"
+
+**Length by what was chosen in intake:**
+- **Short:** 2-4 sentences per variant. No padding.
+- **Medium:** 5-8 sentences. One layer of context added.
+- **Long:** 60-120 words. Includes a specific anchor (story, number, or named situation).
+
+**Structure within each variant:**
 
 ```
-[REFERENCE — 1 sentence]
-Name the specific element of the post you are responding to.
-Not the topic. The sentence, the claim, the number.
-Shows you actually read it.
+[OPENER — 1 sentence]
+The user's natural opener used verbatim or as the direct basis.
+Do not replace their words with something more polished.
 
-[YOUR CONTRIBUTION — 2-4 sentences]
-The personal anchor: named situation, outcome, or number.
-The thing the original post did not have.
-This is the part that cannot be written by anyone else.
+[THE LAYER — 1-3 sentences depending on length]
+What their raw thought becomes once sharpened.
+Each variant takes a different angle on the same raw material.
 
 [THE CLOSE — 1 sentence]
-A conviction, an implication, or a question that requires a real answer.
-Not "What do you think?" — something specific:
-"Have you seen this break down when [specific condition]?"
+A conviction, an implication, or forward motion.
+Short comments can skip this if the opener already lands.
 ```
 
 ---
