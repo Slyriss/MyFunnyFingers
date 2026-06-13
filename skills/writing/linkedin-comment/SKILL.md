@@ -275,3 +275,30 @@ One round of edits. Show only changed lines. Then deliver:
 > The check I started using: if a client has not asked a single question in 30 days, I assume something is wrong, not that everything is fine. Silence is not satisfaction.
 >
 > How long did it take before you realised trust had not been there in the situation you are thinking of?
+
+---
+
+### Short — Agree + Add, energy-first
+*(Aggasys company post about attending the ASUS Next Enterprise Summit Gala. Commenter is a BD exec at Aggasys. Natural opener: "It's events like these...". Length: short.)*
+
+> It's events like these that remind you why the right partnerships change everything.
+>
+> Proud to be part of a team that's built this the right way. Can't wait to see what we bring to clients with the ExpertBook Ultra.
+
+---
+
+### Short — Agree + Add, understated
+*(Same post. Alternative with more weight on the journey.)*
+
+> Events like this don't happen by accident.
+>
+> Years of showing up, growing together, staying close to where the market is heading — that's what earns an invitation like this. Proud to be part of the Aggasys team.
+
+---
+
+### Short — Agree + Add, client-forward
+*(Same post. Alternative that closes on what it means for clients.)*
+
+> It's moments like these that make the partnership worth it.
+>
+> Seeing what ASUS has built with the ExpertBook Ultra in person — and knowing we get to bring that to our clients — is exactly why we do this.
