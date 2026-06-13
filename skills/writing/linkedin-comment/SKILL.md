@@ -66,15 +66,34 @@ You see it differently. Not a contradiction — an alternative interpretation gr
 
 ## Workflow
 
+### Step 0 — Gateway question (always first, before anything else)
+
+Ask this single question before doing anything. The answer determines the entire path.
+
+```
+What do you want to do with this post?
+```
+
+Options:
+- **Comment** — write a long, substantive comment under the post (stays on their post, builds your authority in their audience)
+- **Repost** — share it to your own feed with your own commentary on top (creates a new post on your profile)
+- **Reply to a comment** — someone left a comment on your post and you want to respond well
+
+**If they choose Repost:** stop here. Tell them: "For a repost, use `/linkedin-repost` — it has the full workflow for that." Do not proceed further in this skill.
+
+**If they choose Comment or Reply:** continue to Phase 1 below.
+
+---
+
 ### Phase 1 — Get the post and gut reaction
 
 Ask in one `AskUserQuestion` call:
 
-**Q1:** Paste the post (or the comment you are replying to, for Mode 2 — include the original post it was left on).
+**Q1:** Paste the post (or the specific comment you are replying to — include the original post it sits under).
 
-**Q2:** Which mode?
-- Outbound — commenting on someone else's post
-- Inbound — replying to a comment on my own post
+**Q2:** Which mode fits?
+- Outbound — commenting on someone else's post to add value and get visible to their audience
+- Inbound — replying to a comment left on my own post to keep the thread alive
 
 **Q3:** What is your gut reaction?
 - Mostly agree — but I have something to add from my own experience
