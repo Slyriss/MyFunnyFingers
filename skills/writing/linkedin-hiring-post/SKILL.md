@@ -5,125 +5,166 @@ description: Generate LinkedIn hiring posts in the Voltade storytelling format �
 
 # LinkedIn Hiring Post Generator
 
-Turn a person's story into a LinkedIn hiring post that leads with a real moment, not a resume summary. The format is proven: specific incident → honest reaction → the reveal → achievements → quote → insight → CTA.
+Turn a person's story into a LinkedIn hiring post that leads with a real moment, not a resume summary.
 
-## Why this format works
+Three structural approaches are available. The user picks the one that fits. The voice rules apply to all three.
 
-Generic hiring posts ("We're looking for a passionate team player...") die in the feed. Posts that open with a specific story — one unhappy customer call, one late-night deploy, one unusual question — earn reads because they feel like a person wrote them, not a company. The hiring CTA at the end lands harder because the reader already believes you.
+---
 
-This format works whether the person is still with you (celebrate + CTA for similar candidates) or leaving (send-off + CTA for their replacement). Both have the same structure.
+## The 3 Approaches
+
+### A — Curiosity-Gap / Portrait
+Open on a quiet detail — a late-night message, an unexpected question, a small thing that turned out to be significant. Don't name or explain the person immediately. Let the reader wonder. The reveal lands when it's earned.
+
+**Best when:** the defining moment is subtle. The person didn't save the day dramatically — they noticed something others missed, or handled something quietly that nobody expected them to handle at all.
+
+**Arc:** detail that implies more → who sent it / what happened → the reveal → parenthetical aside → company proof → achievements → quote → one-line close → CTA
+
+**Example opening:**
+> [Name] sent me a message at 11pm on a Wednesday.
+> It wasn't urgent. She wanted to know if the positioning angle we were using for [Product] was the same one we'd tested six months ago, and if so, why.
+> She'd been with us three weeks.
+
+---
+
+### B — Time-Anchor / Story
+Open on the crisis or the pressure point. A deadline, a fallthrough, a moment where something had to happen and the obvious person wasn't available. The candidate steps in. You expected one thing. You got another.
+
+**Best when:** there's a clear before-and-after. Something was broken or missing, and this person fixed or filled it — not because they were asked to go that far, but because that's how they think.
+
+**Arc:** the crisis → what you expected → what actually happened → parenthetical aside → company proof → achievements → quote → insight line → CTA
+
+**Example opening:**
+> Three days before a product launch, our campaign brief fell apart.
+> The freelancer we'd worked with for two years couldn't deliver. We had a launch date, a product, and nothing in between.
+> I asked [Name] to take a first pass at the messaging.
+
+---
+
+### C — Contrarian / Take
+Open on what most companies do. Name the gap between what internships or roles usually are and what yours actually is. Then prove it with one person.
+
+**Best when:** the company genuinely does something unusual — throws interns into real work, gives them actual ownership, puts them in front of clients. The person's story is the proof, not the point.
+
+**Arc:** what most [role]s look like → what this person did instead → the contrast moment → parenthetical aside → company proof → achievements → quote → sharp close → CTA
+
+**Example opening:**
+> Most marketing internships are about learning to use the tools.
+> Scheduling posts. Resizing assets. Sitting in on calls where you're not sure why you're there.
+> [Name] did those things. She also rewrote a campaign brief in her second week because she thought the angle was off.
 
 ---
 
 ## Workflow
 
-### 0. Run the discovery interview (always — skip nothing)
+### 0. Style question (always first)
 
-Before writing a word, ask these questions in a single `AskUserQuestion` call. The post lives or dies on specific details; generalities produce forgettable copy.
+Before anything else, ask the user which approach fits — in a single `AskUserQuestion` call:
 
-Ask all of these:
+**Question 1:** Which structural approach fits this person's story?
+- A: Curiosity-Gap — open on a quiet detail, earn the reveal
+- B: Time-Anchor — open on the crisis, show how they stepped in
+- C: Contrarian — open on what most companies do, then prove you're different
 
-1. **The person**: Name, role, duration (e.g. "5-month intern", "2-year engineer"). Are they still at the company or have they left?
+**Question 2:** What's the person's name, role, and how long they've been with you? Still there or moved on?
 
-2. **The moment**: One specific incident that shows their character — a difficult call, an unexpected solution, a decision under pressure, a question they asked that surprised you. This becomes the opening scene. If the user already shared this, confirm: "Is this the scene you want to open with, or is there a better one?"
+**Question 3:** Give me the specific moment — the incident, the detail, the message, the decision. What happened and when?
 
-3. **The achievement list**: Concrete, metric-backed output. Systems shipped, customers served, scale (hundreds/thousands/millions), AI models deployed, revenue influenced. The more specific the better. Even rough numbers beat vague superlatives.
+**Question 4:** What did they actually produce? Numbers if you have them — campaigns, leads, content pieces, audience growth, revenue, anything with a figure attached. Rough is fine.
 
-4. **Their best quote**: Something they said in their own words — about the work, about learning, about the company. Not a compliment to you; something that reveals how they think. If the user doesn't have one, ask: "Did they say anything memorable about the work or the experience?"
+**Question 5:** Did they say anything that stuck with you — about the work, the market, how they think? One line in their own voice. If nothing comes to mind, say so.
 
-5. **What you're hiring for**: The exact role title and one line on what makes this company/internship unusual. What does your JD actually promise that others don't?
+**Question 6:** What role are you hiring for, and what's the one thing your JD promises that most companies wouldn't?
 
-6. **Tone notes**: Any constraints? (British/American English, first-person vs third, formal/casual, keep it under X words, include a specific hashtag, etc.)
-
-Wait for answers before writing anything.
-
----
-
-### 1. Analyse the inputs
-
-From the answers, identify:
-- **The opening scene**: the most specific, most human moment. It should have a setting, a tension, and a resolution or reveal.
-- **The contrast**: what you expected vs. what happened. This is the structural engine of the post — it creates a micro-story arc in the first three paragraphs.
-- **The parenthetical**: one honest aside that shows fairness or self-awareness (e.g. "I felt a bit bad that we did", "we parted ways with that customer in the end"). This makes the writer sound human, not a PR department.
-- **The proof point**: the JD claim or company promise that this person's story validates. Ideally quote your own JD or onboarding doc.
-- **The metrics block**: convert the achievements into one compact paragraph — count of systems, volume of interactions, AI models, etc. Lead with the most impressive number.
-- **The quote**: use verbatim if given; paraphrase only if it needs tightening. Always keep the cadence of how they actually speak.
-- **The insight**: one-line philosophical takeaway about the work, the industry, or what you learned. Should feel earned, not generic.
-- **The CTA**: role title + what makes the opportunity unusual + where to apply (link or "role is open" if no link given).
+Wait for answers before writing a word.
 
 ---
 
-### 2. Draft the post
+### 1. Draft the post
 
-Write the post in this exact sequence. No headers, no bullet lists — plain prose, short paragraphs.
+Use the chosen approach's arc. Write in plain prose, short paragraphs, no headers or bullet lists inside the post.
+
+**Sequence for all three approaches:**
 
 ```
-[OPENING SCENE — 2-3 sentences]
-Set the incident. Be specific: who, what happened, where in the timeline.
+[OPENING — 2-3 sentences]
+Set the scene using the approach's entry point. Specific. No throat-clearing.
 
-[YOUR REACTION / EXPECTATION — 1-2 sentences]
-What you expected to happen or how you felt walking into it.
+[THE EXPECTATION — 1-2 sentences]
+What you thought would happen, or what the situation implied.
 
 [THE REVEAL — 2-3 sentences]
-What actually happened. The contrast that earns the reader's respect for the person.
+What actually happened. The contrast that makes the person real.
 
 [(PARENTHETICAL ASIDE) — 1 sentence in brackets]
-One honest, self-aware note: shows fairness, shows you're not just cheerleading.
+One honest, self-aware note. Shows fairness, not cheerleading.
 
 [COMPANY PROOF — 2-3 sentences]
-Quote or paraphrase your JD/onboarding doc. Show this person is the proof you meant it.
+Quote or paraphrase your JD. Show this person is evidence you meant it.
 
 [ACHIEVEMENTS — 2-4 sentences]
-Specific numbers. Systems. Customers. Scale. One compact paragraph.
+Numbers first. Systems, campaigns, customers, scale. One compact paragraph.
 
-[DIRECT QUOTE — 1 sentence, set off on its own line]
-Their words. Keep it short. The more specific and slightly-surprising the better.
+[DIRECT QUOTE — 1 sentence, its own line]
+Their words. Short. Specific. Slightly surprising.
 
-[INSIGHT — 1-2 sentences]
-The philosophical takeaway. What this tells you about the work, AI adoption, internships, etc.
+[CLOSE — 1-2 sentences]
+The line the whole post was pointing at. Should earn a save.
 
-[CTA — 2-3 sentences]
-Company is hiring [role]. One line on what makes it unusual. Role is open / link.
+[CTA — 2 sentences]
+Role + the one unusual thing + role is open / link.
 ```
 
-**Word count target**: 200–350 words. Long enough to tell the story, short enough to finish on mobile.
+---
 
-**Style rules (non-negotiable):**
-- First person throughout ("I checked in", "I wrote those lines")
-- Short paragraphs: 1-3 sentences each
-- No corporate buzzwords: no "passionate", "team player", "world-class", "leverage", "synergy", "thrilled"
-- No em dashes — use a period and a new sentence instead
-- Numbers as digits, not words ("4 systems", not "four systems")
+### 2. Voice rules (apply to every post, no exceptions)
+
+**Structure**
+- Line break between every paragraph
+- 1-3 sentences per paragraph
+- No headers, no bullet lists inside the post
+- Numbers as digits: "4 campaigns", not "four campaigns"
 - Parentheticals in actual brackets for aside voice
-- The quote gets its own line, no attribution needed if the person's name is already in the post
+
+**What to cut**
+- Em dashes — replace with a period and a new sentence every time
+- Banned vocabulary: passionate, leverage, utilize, harness, foster, streamline, robust, cultivate, garner, underscore, fundamentally, essentially, ultimately, crucially, notably, game-changer, thought leader, thrilled, excited to share
+- Throat-clearing openers: "Here's the thing:", "The truth is,", "I'll be honest", "The reality is"
+- Binary contrast patterns: "Not X. But Y." — rewrite as a direct positive claim
+- Dramatic fragmentation: isolated 1-2 word sentences used as a rhetorical move — fold into a real sentence
+- Rhetorical setups: "Here's what I mean:", "What this tells us is:", "What if I told you" — delete the setup, state the point directly
+- Cliché closers: "What do you think?", "Tag someone who needs this", "Drop a comment below"
+
+**What to add**
+Per 100 words, verify at least:
+- 1 specific number
+- 1 named entity (person, company, place, product)
+- 1 first-person concrete detail ("I asked", "I read", "I pulled up the docs")
+
+**Sentence rhythm**
+No 3 consecutive sentences of roughly the same length. Every section needs at least one sentence under 7 words and one over 20 words. Uniform length is an AI tell.
+
+**Hook window**
+LinkedIn renders 210 characters before "...see more" on mobile. Count the first 210 characters. The hook must create tension or imply a gap before that cut. If it doesn't pull the reader through, rewrite the first two lines.
+
+**The close**
+The close is where the real thing lands. It should feel like the post was always moving toward this one line. Test: read only the last two lines before the CTA. If they don't land without context, sharpen them.
+
+What works:
+- A reframe of the opening that lands differently now
+- A conviction stated plainly
+- An implication: what it means if this person is who you say they are
+
+What doesn't:
+- Restating the lesson already made in the body
+- A question to prompt engagement
+- Generic forward-looking lines ("can't wait to see what comes next")
 
 ---
 
-### 3. Present for review
+### 3. Reference posts
 
-Show the full draft inline. Then ask:
-
-"Does this read right? Any details to change, any metric I got wrong, or anything that doesn't sound like you?"
-
-Make one round of edits based on feedback. Show only changed sections.
-
-Then ask: "Good to finalise?"
-
----
-
-### 4. Deliver the final post
-
-Once approved, deliver:
-
-1. **The post** in a code block for easy copy-paste into LinkedIn.
-2. **Optional caption notes**: if the user wants to add hashtags or tag the person — suggest 3-5 niche hashtags (e.g. `#softwaredevelopment #internship #AIadoption`) and remind them to @ the person in the post itself (LinkedIn's algorithm rewards it).
-3. **One alternative opening** (optional): if the scene could be told from a different angle, offer one swapped version of just the first paragraph.
-
----
-
-## Reference post (the canonical example)
-
-This is the post that established the format. When in doubt, match its length, voice, and structure:
+**The canonical example (Approach B — Time-Anchor):**
 
 > A few weeks into his internship at Voltade, Jared Kong got on a call with an angry customer.
 >
@@ -147,14 +188,67 @@ This is the post that established the format. When in doubt, match its length, v
 >
 > Voltade is hiring our next Software Engineer Intern. If this sounds like your kind of internship, the role is open.
 
-**What makes it work:**
-- Paragraph 1: scene, specific person, specific incident
-- Paragraphs 2-4: escalation → expected reaction → the reveal (contrast)
-- Paragraph 5: parenthetical aside in brackets (honest, fair, humanising)
-- Paragraphs 6-7: company culture proof via JD quote
-- Paragraph 8: achievements with real metrics
-- Paragraph 9: direct quote, one line, set off alone
-- Paragraph 10: one-line insight about the industry
-- Paragraph 11: CTA, two sentences
+---
 
-Total: ~230 words.
+**Approach A example (Curiosity-Gap / Portrait — Marketing):**
+
+> [Name] sent me a message at 11pm on a Wednesday.
+>
+> It wasn't urgent. She wanted to know if the positioning angle we were using for [Product] was the same one we'd tested six months ago, and if so, why.
+>
+> She'd been with us three weeks.
+>
+> I pulled up the docs. She was right. We'd run the same angle before and the numbers had been flat. Nobody had flagged it before the brief went to the designer.
+>
+> (We caught it in time. [Name] was not supposed to be the one who caught it.)
+>
+> Our marketing JD says "you'll work on real campaigns, not hypothetical ones." That line is easy to put in a document. It's hard to actually mean. She's the reason we mean it.
+>
+> In [X] months, she ran [3] campaigns from brief to publish, wrote copy seen by [XX,000] people, and rebuilt our content calendar from scratch. One post she drafted brought in [X] inbound leads the week it went live.
+>
+> She told me once: "most brands talk to their audience like they're explaining something, not saying something."
+>
+> Some people already know the difference before you teach it.
+>
+> [Company] is hiring our next Marketing Intern. The role is open.
+
+---
+
+**Approach C example (Contrarian / Take — Marketing):**
+
+> Most marketing internships are about learning to use the tools.
+>
+> Scheduling posts. Resizing assets. Sitting in on calls where you're not sure why you're there.
+>
+> [Name] did those things. She also rewrote a campaign brief in her second week because she thought the angle was off.
+>
+> The brief had been approved. I read her version and sent it to the designer instead.
+>
+> (I told her it needed a few tweaks. It needed almost none.)
+>
+> Our JD says interns here work on campaigns with real consequences. That line has been in the doc for two years. [Name] is the first person who tested it inside the first month.
+>
+> In [X] months, she ran [3] campaigns end to end, wrote copy that reached [XX,000] people, and grew our LinkedIn page by [XX%]. One post she wrote in an afternoon became the top-performing piece of content we published all quarter.
+>
+> She told me: "I didn't expect to be making the actual decisions."
+>
+> The best marketing hires don't wait to be given a point of view. [Name] walked in with one.
+>
+> [Company] is hiring our next Marketing Intern. The role is open.
+
+---
+
+### 4. Present for review
+
+Show the full draft. Then ask: "Does this read right? Any detail wrong, any line that doesn't sound like you?"
+
+One round of edits. Show only the changed sections. Then: "Good to finalise?"
+
+---
+
+### 5. Deliver
+
+1. The post in a code block, ready to paste into LinkedIn.
+2. 3-5 hashtag suggestions (niche, not generic).
+3. Reminder to @ the person in the post — LinkedIn's algorithm rewards it.
+4. Optional: one alternative opening if a different approach would work equally well.
