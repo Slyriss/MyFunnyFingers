@@ -75,66 +75,53 @@ What do you want to do with this post?
 ```
 
 Options:
-- **Comment** — write a long, substantive comment under the post (stays on their post, builds your authority in their audience)
-- **Repost** — share it to your own feed with your own commentary on top (creates a new post on your profile)
+- **Comment** — write a comment under the post (stays on their post, gets seen by their audience)
+- **Repost** — share it to your own feed with commentary on top (creates a new post on your profile)
 - **Reply to a comment** — someone left a comment on your post and you want to respond well
 
-**If they choose Repost:** stop here. Tell them: "For a repost, use `/linkedin-repost` — it has the full workflow for that." Do not proceed further in this skill.
+**If they choose Repost:** stop. Tell them: "For a repost, use `/linkedin-repost` — it has the full workflow for that." Do not continue.
 
-**If they choose Comment or Reply:** continue to Phase 1 below.
-
----
-
-### Phase 1 — Get the post and gut reaction
-
-Ask in one `AskUserQuestion` call:
-
-**Q1:** Paste the post (or the specific comment you are replying to — include the original post it sits under).
-
-**Q2:** Which mode fits?
-- Outbound — commenting on someone else's post to add value and get visible to their audience
-- Inbound — replying to a comment left on my own post to keep the thread alive
-
-**Q3:** What is your gut reaction?
-- Mostly agree — but I have something to add from my own experience
-- One specific part hits harder than the rest — I want to pull that thread
-- I see it differently — I have a counterpoint backed by something real
-- Not sure — I just know I have something to say
-
-**Q4:** In one sentence — what is your connection to this topic? Have you seen this in your own work, with a client, in a decision you made?
-
-Wait for answers. Do not write the comment yet.
+**If they choose Comment or Reply:** continue to Phase 1.
 
 ---
 
-### Between phases — Read and suggest
+### Phase 1 — Four questions, one call
+
+Ask all four in a single `AskUserQuestion` call. This is the only intake round for short and medium comments. Do not ask again after this.
+
+**Q1 — The post.** Paste the post (or the comment you are replying to, plus the original post it sits under).
+
+**Q2 — Length.** How long do you want the comment?
+- Short — 2 to 4 sentences. Punchy, personal, done.
+- Medium — 5 to 8 sentences. Adds a layer of context or a specific example.
+- Long — full authority-building comment, 60 to 120 words with a story or data point.
+
+**Q3 — Your natural opener.** How would you start this in your own words — even rough, even one clause? This is the most important input. It sets the voice for the whole comment. If nothing comes to mind, describe the feeling: proud, grateful, excited, reflective, provoked.
+
+**Q4 — One thing to say.** What is the one thing you actually want people to take away? Not polished. The raw thought.
+
+Wait for answers. Do not write yet.
+
+---
+
+### Between intake and draft — Read and decide
 
 After Phase 1:
 
-1. Read the post carefully. Identify the single strongest claim or the most specific line. That is what a good comment responds to — not the topic, the specific argument.
-
-2. Suggest an angle (A, B, or C) with one sentence of reasoning. Example: "This looks like a B — the line about trust being the real adoption barrier is the sharpest thing in this post and it is barely developed. I would pull that thread."
-
-3. For **Mode 2 (Inbound):** also read the comment being replied to. A good reply acknowledges what the commenter actually said — not just the topic — and adds something before asking a follow-up. If the comment is vague, the reply can sharpen the conversation by naming what the commenter probably meant.
-
-4. Confirm the angle in one line before moving to Phase 2.
+1. Read the post. Identify the single line or claim worth responding to — not the topic, the specific argument or moment.
+2. Pick the angle silently (A, B, or C) based on the gut reaction and natural opener. Do not ask the user to pick — infer it and write.
+3. If the user gave a natural opener, use it as the literal first line or the direct basis for it. Their words, their voice. Do not replace it with something more "polished."
+4. For **Inbound replies:** acknowledge what the commenter said specifically before adding anything. A reply that ignores what they wrote is not a reply.
 
 ---
 
-### Phase 2 — Drill for specifics
+### Angle reference (infer, do not ask)
 
-Ask 3 questions in one `AskUserQuestion` call. These must be tailored to what the post actually says — not generic.
+**A — Agree + Add:** User broadly agrees and has something to layer on. Opens with the signal in the post, pivots to their addition.
 
-**Q1 — The anchor.**
-Ask for a specific situation from their own work where the post's claim played out. Name the topic from the post in the question. "Walk me through a specific time you saw [the post's core claim] in your own work. What happened, what was the result?"
+**B — Extend:** User wants to pull one specific thread further. Opens by naming that thread.
 
-**Q2 — The tension.**
-"What is the part of this post that is overstated, incomplete, or missing an exception from your experience — even slightly?"
-
-**Q3 — The one sentence.**
-"Finish this thought with the first thing that comes to mind: the thing I actually want to say here is..."
-
-Wait for answers before writing.
+**C — Respectful Reframe:** User sees it differently. Opens by acknowledging what is true, then naming what it misses.
 
 ---
 
