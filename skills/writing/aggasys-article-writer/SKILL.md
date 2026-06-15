@@ -24,7 +24,7 @@ Before writing, ask the user:
 2. **Target audience** — IT managers, SMB owners, CIOs, or general business audience?
 3. **Tone** — see Tone Guide below (suggest based on topic if user is unsure)
 4. **Any specific requirements** — must-include sections, data points, angles to avoid, CTA preference
-5. **Author** — who is writing this? If it is Sean, use sean@aggasys.com and linkedin.com/in/leeyangsean/. If someone else, collect their name, title, email, and LinkedIn.
+5. **Author** — who is writing this? If it is Lee Yang Sean, use sean@aggasys.com and linkedin.com/in/leeyangsean/. If someone else, collect their name, title, email, and LinkedIn.
 
 If the user pastes a blueprint (from `/aggasys-seo-research`), extract all inputs from it automatically and only ask for what is missing.
 
