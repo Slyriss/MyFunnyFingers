@@ -30,7 +30,53 @@ If the user pastes a blueprint (from `/aggasys-seo-research`), extract all input
 
 ---
 
-## Step 2 — Tone Guide
+## Step 2 — Content Audit (Run Before Writing)
+
+Before drafting anything, read the existing Aggasys articles to check for overlap and identify how the new piece fits the library.
+
+**How to do this:**
+Read the Markdown files in `content/resources/` of the aggasys-website repo (local path: `C:\Users\GOC\Desktop\aggasys-website\content\resources\`). For each file, extract:
+- Title
+- Category
+- Excerpt or opening paragraph
+- Key H2 headings (the main topics covered)
+
+**Then answer three questions:**
+
+1. **Does the proposed article overlap significantly with an existing one?**
+   Overlap means the same primary question, the same audience, and the same core advice. Different angle or depth is not overlap — it is complementary.
+   - *Example of overlap:* proposing "Cloud vs On-Premise Cost Comparison for Singapore Businesses" when that article already exists.
+   - *Example of complementary:* proposing "How to Choose a Cloud Provider in Singapore" — same theme area, different decision point.
+
+2. **Does the proposed article fit naturally into the existing topic clusters?**
+   Flag if the library already has a pillar article on this topic and the new piece would work better as a supporting article (narrower, more specific angle).
+
+3. **Are there any tone or positioning contradictions?**
+   If an existing article takes a strong position on something (e.g., "cloud is not always cheaper") the new article must not contradict it without a clear reason and updated data.
+
+**Output of this step — before asking the user to proceed:**
+
+```
+## Content Audit
+
+Existing articles reviewed: [list titles and slugs]
+
+Overlap check: [None / Partial / Significant]
+- If partial or significant: [explain which existing article and what overlaps]
+- Proposed differentiation: [how the new article is distinct — different angle, audience, depth, or decision point]
+
+Complementary fit: [how this new piece extends the library — what gap it fills]
+
+Positioning contradictions: [None / or list what needs to be reconciled]
+
+Proceed to draft? [Yes — no issues found / or: Suggest adjustment: (describe)]
+```
+
+If overlap is significant and no clear differentiation exists, stop and ask the user how they want to position it differently before proceeding. Do not write an article that duplicates existing content.
+
+---
+
+## Step 3 — Tone Guide
 
 Choose the right register based on the topic:
 
@@ -48,7 +94,7 @@ For mixed-audience articles (e.g. a guide that serves both an IT manager and the
 
 ---
 
-## Step 3 — The Aggasys Article Formula
+## Step 4 — The Aggasys Article Formula
 
 Every article must follow this structure:
 
@@ -88,7 +134,7 @@ This section should describe real patterns, common mistakes, or misconceptions t
 
 ---
 
-## Step 4 — Data Sources
+## Step 5 — Data Sources
 
 Anchor every article with at least 2–3 of these. Do not fabricate statistics.
 
@@ -102,7 +148,7 @@ Anchor every article with at least 2–3 of these. Do not fabricate statistics.
 
 ---
 
-## Step 5 — Writing Rules
+## Step 6 — Writing Rules
 
 **Em-dashes are banned.** Replace with commas, parentheses, colons, or restructure the sentence. No exceptions.
 
@@ -123,7 +169,7 @@ Anchor every article with at least 2–3 of these. Do not fabricate statistics.
 
 ---
 
-## Step 6 — Output Format
+## Step 7 — Output Format
 
 Deliver the article as clean Markdown, formatted for the Aggasys website content system:
 
@@ -151,10 +197,12 @@ The `<!--more-->` marker should fall after the first 1–2 paragraphs (the tease
 
 ---
 
-## Step 7 — Quality Check Before Delivery
+## Step 8 — Quality Check Before Delivery
 
 Before handing over the article, verify:
 
+- [ ] Content audit passed — no significant overlap with existing articles
+- [ ] Positioning is complementary and fills a clear gap in the library
 - [ ] No em-dashes anywhere
 - [ ] No "In today's digital economy" or similar opening
 - [ ] Opening is Singapore-specific and challenges or informs
